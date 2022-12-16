@@ -52,7 +52,6 @@ const Moredetails = () => {
                          </div>
                     </div>
                </div>
-               <Footer />
           </>
      );
 };
