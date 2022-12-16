@@ -1,0 +1,25 @@
+.navbar{
+    background-color: darkgray;
+    border-radius: 33px;
+}
+.fright{
+    margin: auto;
+    margin-right: inherit;
+}
+.navbar-brand{
+    margin-left: 13px;
+    color: black;
+}
+
+.d-inline-block{
+    border-radius: 28px;
+}
+
+.navbar-toggler{
+    margin: auto;
+}
+.nav-item a:hover{
+    color: ghostwhite;
+    border-bottom: 2px solid blue;
+}
+
