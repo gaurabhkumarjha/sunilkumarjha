@@ -15,10 +15,10 @@ const Services = () => {
             <div class="container">
                 <div class="row">
 
-                    <Servicecompo cname={"GST REGISTRATION"} cimg={gstregistration} cdescription={"New Registration, Old GST Number Maintenance ETC."} />
+                    <Servicecompo cname={"GST REGISTRATION"} cimg={gstregistration} cdescription={"New Registration ETC."} />
                     <Servicecompo cname={"FILING OF GST RETURN"} cimg={gstreturn} cdescription={"GSTR-1, GSTR-2, GSTR- 3B ETC. SGST, CGST & IGST"} />
                     <Servicecompo cname={"FILING OF ITR"} cimg={itr} cdescription={"ITR-1, ITR-2, ITR- 3, ITR- 4, ITR- 5, ITR- 6 ETC."} />
-                    <Servicecompo cname={"ACCOUNTANCY SERVICES"} cimg={accser} cdescription={"Book keeping, Chartered accounting, Tax accounting, Forensic accounting,   Account auditing, Payable accounts, Payroll, Bank reconciliation."} />
+                    <Servicecompo cname={"ACCOUNTANCY SERVICES"} cimg={accser} cdescription={"Book keeping, Chartered accounting, Tax accounting, Account auditing."} />
                     <Servicecompo cname={"CASE & ASSESSMENT"} cimg={caseass} cdescription={"According to work."} />
                 </div>
             </div>

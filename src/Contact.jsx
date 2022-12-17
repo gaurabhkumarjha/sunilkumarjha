@@ -21,7 +21,7 @@ const Contact = () => {
                             </div>
                             <div class="offcanvas-body">
                                 Services: GST RETURN || FILING OF ITR || GST REGISTRATION || ACCOUNTANCY SERVICES || CASE & ASSESSMENT<br></br><br></br>
-                                Address: Shankar Market Connaught Place New Delhi- 11001
+                                Address: Shankar Market Connaught Place New Delhi- 110001
                             </div>
                         </div>
 
