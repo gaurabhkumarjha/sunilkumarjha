@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import Advertisment from "./Advertisment";
 
 const Moredetails = () => {
      
@@ -51,6 +51,7 @@ const Moredetails = () => {
                          </div>
                     </div>
                </div>
+               <Advertisment />
           </>
      );
 };
