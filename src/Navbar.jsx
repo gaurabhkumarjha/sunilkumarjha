@@ -6,10 +6,8 @@ import Login from './Login'
 import Logout from "./Logout";
 import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
-    const { user, isAuthenticated, isLoading } = useAuth0();
-    if (isLoading) {
-         <div>Loading ...</div>;
-      }
+    const { user, isAuthenticated } = useAuth0();
+
     return (
         <>
             <div className="container-fluid">
@@ -26,17 +24,21 @@ const Navbar = () => {
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav fright">
-                                    {
-                                        isAuthenticated ? (<li class="nav-item">
-                                        <p>{user.name}</p>
-                                            <Login />
-                                        </li>) :
-                                            (<li class="nav-item">
-                                                <Logout />
-                                            </li>)
-                                    }
-
-
+                                    {isAuthenticated && (
+                                        <div>
+                                            <p>{user.name}</p>
+                                        </div>
+                                    )}
+                                    <div>
+                                    <li class="nav-item">
+                                        <Login />
+                                    </li>
+                                    </div>
+                                    <div>
+                                    <li class="nav-item">
+                                        <Logout />
+                                    </li>
+                                    </div>
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href='/'>Home</a>
                                     </li>
