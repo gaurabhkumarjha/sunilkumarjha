@@ -4,6 +4,8 @@ import Ourclints from "./Ourclints";
 import './Home.css'
 import Navbar from "./Navbar";
 const Home = () => {
+
+
      function ser() {
           window.location.href = "/service";
      }
@@ -11,7 +13,6 @@ const Home = () => {
           <>
                <Navbar />
                <Ourclints />
-
                <div className="container-fluid">
                     <div className="row">
                          <div className="col-md-10 col-12 mx-auto">
@@ -22,6 +23,7 @@ const Home = () => {
                     </div>
                </div>
                <Footer />
+
           </>
      );
 };

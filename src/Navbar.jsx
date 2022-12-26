@@ -1,9 +1,15 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import'../node_modules/bootstrap/dist/js/bootstrap.bundle'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import './Navbar.css'
+import Login from './Login'
+import Logout from "./Logout";
+import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
-
+    const { user, isAuthenticated, isLoading } = useAuth0();
+    if (isLoading) {
+         <div>Loading ...</div>;
+      }
     return (
         <>
             <div className="container-fluid">
@@ -11,7 +17,7 @@ const Navbar = () => {
                     <div className="col-md-10 col-12 mx-auto">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="/">
-                                <img src="https://t3.ftcdn.net/jpg/05/27/90/76/360_F_527907602_yT0DhDWezRiwsawY7OLkptYErjYLBJeC.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top"/>
+                                <img src="https://t3.ftcdn.net/jpg/05/27/90/76/360_F_527907602_yT0DhDWezRiwsawY7OLkptYErjYLBJeC.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />
                                 @SunilKumarJha
                             </a>
 
@@ -20,6 +26,17 @@ const Navbar = () => {
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav fright">
+                                    {
+                                        isAuthenticated ? (<li class="nav-item">
+                                        <p>{user.name}</p>
+                                            <Login />
+                                        </li>) :
+                                            (<li class="nav-item">
+                                                <Logout />
+                                            </li>)
+                                    }
+
+
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href='/'>Home</a>
                                     </li>
@@ -32,6 +49,7 @@ const Navbar = () => {
                                     <li class="nav-item">
                                         <a class="nav-link" href="/contact">Contact</a>
                                     </li>
+
                                 </ul>
                             </div>
 
