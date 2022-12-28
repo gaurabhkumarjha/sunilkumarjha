@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button class="btn btn-warning lgs" onClick={() => loginWithRedirect()}>Log In</button>;
+  return <button class="btn btn-outline-success lgs" onClick={() => loginWithRedirect()}>Log In</button>;
 };
 
 export default Login;
