@@ -2,12 +2,15 @@ import React from "react";
 import './Ourclint.css'
 const Ourclints = () => {
 
+     function popserve(){
+        window.location.href="/service";
+     }
     return (
         <>
         <div className="container-fluid">
                     <div className="row">
                          <div className="col-md-10 col-12 mx-auto">
-            <div class='wrapper'>
+            <div class='wrapper' onClick={popserve}>
                 <div class='carousel'>
                     <div class='carousel__item'>
                         <div class='carousel__item-head'>

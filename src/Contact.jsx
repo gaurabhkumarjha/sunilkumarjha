@@ -22,6 +22,10 @@ const Contact = () => {
                             <div class="offcanvas-body">
                                 Services: GST RETURN || FILING OF ITR || GST REGISTRATION || ACCOUNTANCY SERVICES || CASE & ASSESSMENT<br></br><br></br>
                                 Address: Shankar Market Connaught Place New Delhi- 110001
+                                <br></br>
+                                Mobile NO: 9911718908
+                                <br></br>
+                                Email id: sunilacck@yahoo.com
                             </div>
                         </div>
 
@@ -38,12 +42,12 @@ const Contact = () => {
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserEmail" required autoComplete="off" />
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserEmail"  autoComplete="off" />
                                 <label for="floatingInput">Email</label>
                             </div>
 
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: 100 }} name="UserMessage" required autoComplete="off"></textarea>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: 100 }} name="UserMessage"  autoComplete="off"></textarea>
                                 <label for="floatingTextarea2">Write Your Message</label>
                             </div>
 

@@ -9,13 +9,18 @@ const Servicecompo = (props) => {
 
     function getpopup() {
 
-       if (isAuthenticated)
-            window.location.href = "/Details";
-       else alert("login");
+        if (isAuthenticated) {
+            window.location.href = "/Details";  
+        }
+
+        else {
+     alert("First Login! if you already logged in so change your browser and use stable browser like Chrome");
+        }
     }
     return (
 
         <>
+
             <div class="card" style={{ width: '18rem' }}>
                 <img src={props.cimg} class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -24,6 +29,7 @@ const Servicecompo = (props) => {
                     <button type="button" onClick={getpopup} class="btn btn-warning newbtn">Get More Details</button>
                 </div>
             </div>
+
         </>
     );
 };

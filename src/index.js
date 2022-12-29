@@ -8,7 +8,8 @@ ReactDOM.render(
     domain="dev-jm1d6q6duamk25tc.us.auth0.com"
     clientId="StSQ011rKwu7OCjFxNQDLJTnStcH3Uvm"
     redirectUri={window.location.origin}
+    
   >
     <App />
-  </Auth0Provider>,document.getElementById('root')
+  </Auth0Provider>, document.getElementById('root')
 );

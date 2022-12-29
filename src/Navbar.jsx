@@ -29,16 +29,21 @@ const Navbar = () => {
                                             <p>{user.name}</p>
                                         </div>
                                     )}
-                                    <div>
-                                    <li class="nav-item">
-                                        <Login />
-                                    </li>
-                                    </div>
-                                    <div>
-                                    <li class="nav-item">
-                                        <Logout />
-                                    </li>
-                                    </div>
+
+                                    {isAuthenticated ?
+                                        <div>
+                                            <li class="nav-item">
+                                                <Logout />
+                                            </li>
+                                        </div>
+                                        :
+                                        <div>
+                                            <li class="nav-item">
+                                                <Login />
+                                            </li>
+                                        </div>
+                                    }
+
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href='/'>Home</a>
                                     </li>
