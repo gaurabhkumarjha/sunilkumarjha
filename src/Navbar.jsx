@@ -56,7 +56,9 @@ const Navbar = () => {
                                     <li class="nav-item">
                                         <a class="nav-link" href="/contact">Contact</a>
                                     </li>
-
+                                    <li class="nav-item bgwar">
+                                        <a class="nav-link" href="/Offers">Offers!</a>
+                                    </li>
                                 </ul>
                             </div>
 

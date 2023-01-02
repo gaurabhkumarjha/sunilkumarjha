@@ -6,6 +6,7 @@ import Services from './Services';
 import Location from './Location';
 import Error from './Error.jsx';
 import Moredetails from "./Moredetails";
+import Offers from "./Offers.jsx";
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
                 <Route  path="/location" element={<Location/>}></Route>
                 <Route  path="/service" element={<Services/>}></Route>
                 <Route  path="/Details" element={<Moredetails/>}></Route>
+                <Route  path="/Offers" element={<Offers/>}></Route>
                 <Route  path="*" element={<Error/>}></Route>
 
             </Routes>

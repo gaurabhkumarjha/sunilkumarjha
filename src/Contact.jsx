@@ -29,7 +29,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-
+                        <div className="touch"><h3> -- get in touch -- </h3></div>
                         <form className="cont" action="https://formspree.io/f/meqdyvjn" method="POST">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Name" name="UserName" required autoComplete="off" />
